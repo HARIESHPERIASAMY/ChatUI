@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Chat UI</title>
+<link rel="stylesheet" href="CHATui.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Workspace Sidebar -->
+    <aside class="workspace">
+        <div class="logo">DC</div>
+        <div class="avatar"></div>
+        <div class="avatar"></div>
+        <div class="avatar"></div>
+    </aside>
+
+    <!-- Channel / DM List -->
+    <aside class="sidebar">
+        <h3>Design chat</h3>
+
+        <div class="section">Direct Messages</div>
+
+        <div class="dm active">
+            <img src="https://i.pravatar.cc/100?img=11">
+            <span>Owen Campos</span>
+        </div>
+
+        <div class="dm">
+            <img src="https://i.pravatar.cc/100?img=32">
+            <span>Jayden Church</span>
+        </div>
+
+        <div class="dm">
+            <img src="https://i.pravatar.cc/100?img=18">
+            <span>Jacob Mccloud</span>
+        </div>
+
+        <div class="dm">
+            <img src="https://i.pravatar.cc/100?img=44">
+            <span>Anthony Cardenas</span>
+        </div>
+    </aside>
+
+    <!-- Main Chat -->
+    <main class="chat">
+        <header class="chat-header">
+            <h2>Design chat</h2>
+            <div class="icons">
+                <span>🔍</span>
+                <span>📎</span>
+                <span>⋮</span>
+            </div>
+        </header>
+
+        <section class="messages">
+            <div class="msg received">
+                <img src="https://i.pravatar.cc/100?img=11">
+                <div class="bubble">
+                    <strong>Owen Campos</strong>
+                    <p>I added new ideas for the landing system.</p>
+                </div>
+            </div>
+
+            <div class="msg received">
+                <img src="https://i.pravatar.cc/100?img=32">
+                <div class="bubble">
+                    <strong>Jayden Church</strong>
+                    <p>Looks great! We should refine the hero section.</p>
+                </div>
+            </div>
+
+            <div class="msg sent">
+                <div class="bubble">
+                    <p>I’ll update the spacing and colors today 👍</p>
+                </div>
+            </div>
+
+            <div class="msg received">
+                <img src="https://i.pravatar.cc/100?img=18">
+                <div class="bubble">
+                    <strong>Jacob Mccloud</strong>
+                    <p>Here’s the meeting photo from yesterday.</p>
+                    <img class="preview" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+                </div>
+            </div>
+        </section>
+
+        <footer class="input">
+            <input type="text" placeholder="Write a message...">
+            <button>Send</button>
+        </footer>
+    </main>
+
+    <!-- Info Panel -->
+    <aside class="info">
+        <h4>Group info</h4>
+
+        <div class="card">
+            <strong>Files</strong>
+            <p>Shared design assets</p>
+        </div>
+
+        <div class="card">
+            <strong>Members</strong>
+            <p>15 members online</p>
+        </div>
+    </aside>
+
+</div>
+
+</body>
+</html>
